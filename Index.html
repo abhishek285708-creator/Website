@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling Metal Engineering | Rudraksha Rolling Shutter</title>
+    <!-- CSS Styles -->
+    <style>
+        :root { --primary: #1a365d; --accent: #ed8936; --dark: #0f172a; --light: #f7fafc; }
+        body { font-family: 'Poppins', sans-serif; background: var(--light); color: var(--dark); margin: 0; }
+        .hero { background: var(--primary); color: white; padding: 100px 20px; text-align: center; }
+        .section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+        .contact-grid, .form-grid { display: grid; gap: 20px; grid-template-columns: 1fr 1fr; }
+        .contact-card, .service-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .submit-btn { background: var(--accent); color: white; border: none; padding: 15px; border-radius: 10px; cursor: pointer; width: 100%; }
+        @media (max-width: 768px) { .contact-grid, .form-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Rolling Metal Engineering</h1>
+        <p>Your Trusted Partner in Steel & Rolling Solutions (Since 2022)</p>
+    </section>
+
+    <!-- Details Section -->
+    <section class="section">
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>Business Hours</h3>
+                <p>Monday - Saturday<br>10:00 AM - 6:00 PM</p>
+            </div>
+            <div class="contact-card">
+                <h3>Service Area</h3>
+                <p>Providing Professional Services<br>All Over Nagpur</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sister Company -->
+    <section class="section">
+        <h2>Our Sister Concern</h2>
+        <div class="service-card" style="border-left: 5px solid var(--accent);">
+            <h3>Rudraksha Rolling Shutter</h3>
+            <p>Specialized in high-quality rolling shutter manufacturing and repair services across the entire Nagpur region.</p>
+        </div>
+    </section>
+
+    <!-- Inquiry Form -->
+    <section class="section">
+        <h2>Get A Quote</h2>
+        <form action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST" class="quote-form">
+            <div class="form-grid">
+                <input type="text" name="name" placeholder="Name" required style="padding:15px;">
+                <input type="tel" name="phone" placeholder="Phone" required style="padding:15px;">
+                <textarea name="message" placeholder="Requirement Details" required style="padding:15px; grid-column: span 2;"></textarea>
+                <button type="submit" class="submit-btn">Send Inquiry</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
